@@ -1,0 +1,315 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: rgb(253, 191, 74);
+    position: sticky;
+    top: 0%;
+}
+
+.navbar{
+    display: flex;
+    width: 1300px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+/* Nav Bar */
+.navbar img{
+    width: 100
+    
+    px;
+}
+
+.country-select{
+    width: 250px;
+}
+
+.select i{
+    font-size: 15px;
+}
+
+.select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(228, 228, 250, 0.7);
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: brown;
+}
+
+.option p{                      
+    margin-left: 10px;
+}
+
+.option i{                         /* icon color */
+    color:navy;
+}
+
+.option-box{
+    display: none;
+    position: absolute;
+    top: 80px;
+}
+
+.hidden{
+    display: block;
+}
+
+/* search box */
+.search-box{
+    display: flex;
+}
+
+.search-box i {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.user-icon img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nameandimg img{
+    width: 65px;
+    border-radius: 50%;
+}
+
+.nameandimg p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nameandimg{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 20px 0px;          /* top right bottom left */
+}
+
+.dropdown{
+    width: 250px;
+    box-shadow: 0 0 10px grey;
+    padding: 15px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 90px;
+}
+
+.dropdown ul li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover{
+    background-color: brown;
+}
+
+.dropdown ul li i{
+    font-size: 18px;
+}
+
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.dropdownel{
+    display: block ;
+}
+
+.add-pro-page button{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(231, 243, 71);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: white;
+    display: flex;
+
+    /* add product */
+}
+.prodropdown{             
+width: 250px;
+box-shadow: 0 0 10px grey;
+padding: 15px;
+background-color: rgb(83, 141, 239);
+display: none;
+position: absolute;
+top: 100px;
+}
+
+.pro{
+    display: block;
+}
+
+.addprodropdown{
+    display: block;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 15px 10vw;
+    justify-content: space-between;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    /* background-image: url('https://www.wheelzonrent.in/wp-content/uploads/2017/10/Car-Bike-On-Rent-Delhi-Wheelzonrent.jpg'); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #acb0af;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){                    /* dont get this line */
+    grid-column: span 2;
+    margin-bottom: 10px;
+} 
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: #383838;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 160px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link:hover{
+    color: #fff;
+}

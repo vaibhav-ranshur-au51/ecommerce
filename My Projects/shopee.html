@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\Hp\OneDrive\Desktop\ecommerce\My Projects\shopee.css">
+    <script src="C:\Users\Hp\OneDrive\Desktop\ecommerce\My Projects\shopee.js" defer></script>
+    <!-- <script src="D:\add product\add-product.js" defer></script> -->
+    <title>Shopee</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div class="header">
+        <div class="navbar">
+            <img src="C:\Users\Hp\OneDrive\Desktop\ecommerce\My Projects\images\shopee logo.png" alt="logo">
+
+            <!-- country select -->
+            <div class="country-select" id="country">
+                <div class="select">
+                    <p id="text">select your country </p>
+                    <i class="fa-solid fa-chevron-down" ></i>
+                </div>
+                          <!-- list of country -->
+                <ul class="option-box" id="country-list">
+                    <li class="option" onclick="click_country('INDIA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>INDIA</p>
+                    </li>
+                    <li class="option" onclick="click_country('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="click_country('Africa')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Africa</p>
+                    </li>
+                    <li class="option" onclick="click_country('Pakistan')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pakistan</p>
+                    </li>
+                    <li class="option" onclick="click_country('China')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>China</p>
+                    </li>
+                    <li class="option" onclick="click_country('Russia')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Russia</p>
+                    </li>
+                </ul>
+
+            </div>
+                        <!-- search box  -->
+            <div class="search-box">
+                <input type="text" class="search" id="search-id" placeholder="Find Cars and Bikes here...." >
+                <p><i class="fa-sharp fa-solid fa-magnifying-glass"></i></p>
+            </div>
+                        <!-- comment icon,notification icon and user icon -->
+            <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+                        <!-- user  -->
+            <div class="user-icon">
+                <div class="user-img" id="user-image-id">
+                <img src="C:\Users\Hp\OneDrive\Desktop\ecommerce\My Projects\images\user icon.jpeg" alt="user logo">
+               </div>
+                        <!-- Drop down  -->
+            <div class="dropdown" id="dropdown-id">
+                <div class="nameandimg">
+                    <img src="C:\Users\Hp\OneDrive\Desktop\ecommerce\My Projects\images\user icon.jpeg" alt="user-image">
+                    <p>Vaibhav Ranshur</p>
+                </div>
+                <hr>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <p>My Account</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <p>My Orders</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Settings</p>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-question"></i>
+                        <p>Help</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Log Out</p>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+         <div class="add-pro-page">
+            <button id="add-product-btn">
+                <i class="fa-solid fa-plus"></i>
+                <p>Add Product</p>
+            </button>
+              <!-- add product dropdown -->
+               
+         </div>
+         <div id="productForm" class="prodropdown">
+            <h2>Add Product</h2>
+            <form id="addProductForm" enctype="multipart/form-data">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" class="pro" id="imageinput" name="image">
+
+                    <label for="model">Model:</label>
+                    <input type="text" class="pro" id="modelinput" name="model">
+
+                    <label for="type">type:</label>
+                    <input type="text" class="pro" id="typeinput" name="type">
+
+                    <label for="about">About:</label>
+                    <input type="text" class="pro" id="aboutinput" name="about">
+
+                    <label for="price">Price:</label>
+                    <input type="number" class="pro" id="priceinput" name="price">
+        
+                    <label for="address">Address:</label>
+                    <input type="text" class="pro" id="addressinput" name="address">
+                
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" class="pro" id="contactinput" name="contact" placeholder="+91|">
+                
+                    <button type="submit">Submit</button>
+            </form>
+          </div>  
+        </div>
+    </div>
+                     <!-- link container -->
+    <ul class="links-container">
+        <li class="link-item"><a href="#" class="link">Home</a></li>
+        <li class="link-item"><a href="#" class="link">Buy product</a></li>
+        <!-- <li class="link-item"><a href="#" class="link">Add Product</a></li> -->
+        <li class="link-item"><a href="#" class="link">Two Wheeler's</a></li>
+        <li class="link-item"><a href="#" class="link">Four Wheeler's</a></li>
+    </ul>
+                    <!-- hero section -->
+    <header class="hero-section">
+
+        <div id="hero-section">
+            <img id="imagedisplay" src="" >
+            <h1 id="modelnamedisplay"></h1>
+            <h3 id="aboutdisplay"></h3>   
+            <h3 id="pricedisplay"></h3>
+            <h3 id="contactdisplay"></h3>
+            <h3 id="addressdisplay"></h3>            
+        </div> 
+
+        <div class="content">            
+            <img src="C:\Users\Hp\OneDrive\Desktop\images\shopee logo.png" class="logo" alt="">
+            <p class="sub-heading">best deal,s of all time</p>
+        </div>
+    </header>
+
+    <!-- <section class="collection-container">
+        <a href="#" class="collection">
+            <img src="C:\Users\Hp\OneDrive\Desktop\images\car image icon.png"  alt="Four-Wheeler-icon">
+            <p class="collection-title">Four <br> Wheelers</p>
+        </a>
+        <a href="#" class="collection">
+            <img src="C:\Users\Hp\OneDrive\Desktop\images\Bike image icon.png" alt="Two-Wheeler-icon">
+            <p class="collection-title">Two <br> Wheelers</p>
+        </a>
+        </section> -->
+
+
+                         <!-- footer -->
+<footer>
+    <div class="footer-content">
+        <img src="C:\Users\Hp\OneDrive\Desktop\images\footer-logo.jpg" class="logo" alt="">
+        <div class="footer-ul-container">
+
+
+            <ul class="category">
+                <li class="category-title">Two Wheelers</li>
+                <li><a href="#" class="footer-link">Standard</a></li>
+                <li><a href="#" class="footer-link">Cruiser</a></li>
+                <li><a href="#" class="footer-link">Touring</a></li>
+                <li><a href="#" class="footer-link">Off-Road</a></li>
+                <li><a href="#" class="footer-link">Sports</a></li>
+                <li><a href="#" class="footer-link">Dual-Purpose</a></li>
+            </ul>
+
+            
+            <ul class="category">
+                <li class="category-title">Four-Wheelers</li>
+                <li><a href="#" class="footer-link">Hatchback </a></li>
+                <li><a href="#" class="footer-link">Sedan</a></li>
+                <li><a href="#" class="footer-link">SUV</a></li>
+                <li><a href="#" class="footer-link">MUV</a></li>
+                <li><a href="#" class="footer-link">Coupe</a></li>
+                <li><a href="#" class="footer-link">Convertible </a></li>
+                <li><a href="#" class="footer-link">Pickup Truck</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
